@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文件上传</title>
+  </head>
+  <body>
+    <div>
+      <label for="file1">分片上传：</label>
+      <input type="file" name="file1" id="uploda1" />
+      <span>进度：<span class="percent1">0%</span></span>
+    </div>
+    <script src="./package/spark-md5.js"></script>
+    <script src="./package/day.js"></script>
+    <script type="module">
+      import upload1 from "./js/upload1.js";
+      document.querySelector("#uploda1").addEventListener("change", upload1);
+    </script>
+  </body>
+</html>
